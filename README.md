@@ -1,4 +1,4 @@
-This example project shows how to install Composer locally and consume an example REST API with the [Guzzle](https://github.com/guzzle/guzzle) client. You need to have PHP installed for this to work.
+This example project shows how to install Composer locally and consume an example REST API with the [Guzzle](https://github.com/guzzle/guzzle) client and render the response with [Blade](https://github.com/EFTEC/BladeOne). You need to have PHP installed for this to work.
 
 Here's what you need to do:
 
@@ -15,12 +15,12 @@ Either run [these lines](https://getcomposer.org/download/) (listed under *Comma
 Run this from the terminal in our project's root directory:
 `php composer.phar install`
 
-It will install the packages listed in the `composer.json` file, in our case just Guzzle.
+It will install the packages listed in the `composer.json` file, in our case just Guzzle and the BladeOne template engine.
 
 **Check it out**
 
 Now we'll just start up PHP's built in server and check it out:
-`php -S localhost:3000`
+`php -S localhost:3000 -t public/`
 
 Open [http://localhost:3000](http://localhost:3000) in your browser and you should see Guzzle consuming [this example REST API](https://jsonplaceholder.typicode.com/).
 
