@@ -8,7 +8,7 @@ Here's what you need to do:
 
 **Install Composer for local usage**
 
-Run [these lines](https://getcomposer.org/download/) (listed under *Command-line installation*), in order, in the terminal at our project's root directory to download `composer.phar`.
+Either run [these lines](https://getcomposer.org/download/) (listed under *Command-line installation*), in order, in the terminal at our project's root directory to download `composer.phar`, or run the script: `./install-composer.sh` (this [bash script is from Composer](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md)'s website and checks the installer's hash before downloading).
 
 **Install Composer dependencies**
 
